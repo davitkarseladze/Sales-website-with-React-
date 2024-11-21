@@ -1,0 +1,175 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.filters-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filter, .sort-menu {
+  margin: 0 20px;
+}
+
+.filter label, .sort-menu label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.filter select, .sort-menu select {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter select:hover, .sort-menu select:hover {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+.product-card {
+  background-image: url("/public/subtle-patterns-website-1.gif");
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-align: center;
+  padding: 24px;
+}
+
+a{
+  text-decoration: none;
+  color: wheat;
+}
+
+a:hover{
+  color: #ff7f50;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sale-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.outofstock-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: gray;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  background-color: #373737;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.pagination-btn.disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination-btn:not(:last-child) {
+  margin-right: 5px;
+}
+
+.page-number {
+  font-size: 18px;
+  margin: 0 10px;
+  color: #333;
+}
+
+.pagination-btn:hover {
+  background-color: #5a5a5a; 
+}
+
+.pagination-btn.active {
+  background-color: #555; 
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination-btn {
+    margin: 5px 0;
+  }
+
+  .pagination-btn:not(:last-child) {
+    margin-right: 0;
+  }
+}
+

@@ -1,0 +1,115 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.product-details-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 80px auto; 
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  position: relative;
+  margin-right: 48px;
+}
+
+.product-image img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+.sale-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-details h2 {
+  font-size: 2.8em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  color: #555;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.price {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #ff7f50;
+  margin-right: 16px;
+}
+
+.old-price {
+  font-size: 2em;
+  text-decoration: line-through;
+  color: black;
+}
+
+.button-container button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:hover {
+  background-color: #ff6347;
+  transform: translateY(-2px);
+}
+
+.button-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.out-of-stock {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}

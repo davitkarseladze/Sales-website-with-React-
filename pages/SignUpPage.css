@@ -1,0 +1,171 @@
+.login {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.logincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 4px;
+}
+
+form label input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+form label input:focus {
+  border-color: #ff6347;
+  outline: none;
+}
+
+.themeBtn {
+  background: linear-gradient(to right, #ff6347, #ff7f50);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.themeBtn:hover {
+  background: linear-gradient(to right, #ff7f50, #ff6347);
+}
+
+.themeBtn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.forgotPasswordButton {
+  color: #ff6347;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgotPasswordButton:hover {
+  color: #ff7f50;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin: 0 5px;
+}
+
+.login-btn:hover {
+  color: #ff6347;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.flexrow small {
+  color: #666;
+}
+
+.flexrow small span {
+  color: #ff6347;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.flexrow small span:hover {
+  color: #ff7f50;
+}
+
+.flexrow .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flexrow .login-btn i {
+  font-size: 24px;
+}
+
+.flexrow .gog-btn {
+  background: #db4437;
+}
+
+.flexrow .fb-btn {
+  background: #3b5998;
+}
+
+.flexrow .yah-btn {
+  background: #720e9e;
+}
+
+.flexrow .gog-btn:hover {
+  background: #c23321;
+}
+
+.flexrow .fb-btn:hover {
+  background: #2d4373;
+}
+
+.flexrow .yah-btn:hover {
+  background: #5d0a7b;
+}
