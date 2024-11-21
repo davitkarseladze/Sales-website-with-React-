@@ -1,0 +1,32 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+}
+
+.language-switcher select {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.language-switcher select:focus {
+  outline: none;
+}
+
+@media (max-width: 1127.25px) {
+  .language-switcher select {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    margin-top: 16px;
+  }
+}
